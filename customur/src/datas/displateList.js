@@ -1,17 +1,74 @@
 export const displateList = [
     {
-        name: 'petite',
+        name: 'displate petite',
         category: 'displate',
-        id: 'dP'
+        size: 'petit',
+        id: 'dP',
+        isBestSales: true,
+        weight: '0.25',
     },
     {
-        name: 'moyenne',
+        name: 'displate moyenne',
         category: 'displate',
-        id: 'dM'
+        size: 'moyen',
+        id: 'dM',
+        isBestSales: false,
+        weight: '0.5',
     },
     {
-        name: 'grande',
+        name: 'displate grande',
         category: 'displate',
-        id: 'dG'
+        size: 'grand',
+        id: 'dG',
+        isBestSales: false,
+        weight: '0.75',
+    },
+    {
+        name: 'displate très grande',
+        category: 'displate',
+        size: 'très grand',
+        id: 'dTG',
+        isBestSales: true,
+        weight: '1.0',
+    },
+    {
+        name: 'cadre petit',
+        category: 'cadre',
+        size: 'petit',
+        id: 'cP',
+        isBestSales: true,
+        weight: '0.2',
+    },
+    {
+        name: 'cadre moyen',
+        category: 'cadre',
+        size: 'moyen',
+        id: 'cM',
+        isBestSales: false,
+        weight: '0.4',
+    },
+    {
+        name: 'cadre grand',
+        category: 'cadre',
+        size: 'grand',
+        id: 'cG',
+        isBestSales: false,
+        weight: '0.6',
+    },
+    {
+        name: 'cadre double',
+        category: 'cadre',
+        size: 'double',
+        id: 'cD',
+        isBestSales: true,
+        weight: '1.0',
+    },
+    {
+        name: 'cadre double grand',
+        category: 'cadre',
+        size: 'double grand',
+        id: 'cDG',
+        isBestSales: false,
+        weight: '1.2',
     }
 ]
