@@ -1,5 +1,6 @@
 import { displateList } from '../datas/displateList'
-import Weight from './Weight'
+import DisplateItem from "./DisplateItem";
+import '../styles/ShoppingList.css'
 
 function ShoppingList() {
     const categories = displateList.reduce(
@@ -17,12 +18,14 @@ function ShoppingList() {
 
             </ul>
             <ul>
-                {displateList.map(displate => (
-                    <><li key={displate.id}>
-                        {displate.name}
-                        {displate.isBestSales && <span> 🔥</span>}
-
-                    </li><Weight weight={displate.weight} /></>
+                {displateList.map(({id, cover, name, weight, isBestSales}) => (
+                    <DisplateItem
+                        id={id}
+                        cover={cover}
+                        name={name}
+                        weight={weight}
+                        sales={isBestSales}
+                    />
                 ))}
             </ul>
         </div>
